@@ -1,0 +1,21 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/pages/mainpages/02contact.css' %}" >
+
+<div class="page">
+    <div class="contact_page" >
+        <h3>CONTACT</h3>
+        <p> <a href="{% url 'profile_card'%}"> click</a> for business card</p>
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name...">  
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email...">        
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write your message.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>

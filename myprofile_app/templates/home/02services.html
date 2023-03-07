@@ -1,0 +1,64 @@
+{% load static %}
+<style>
+    .services{text-align:center;height:300px;background-color: bisque;}
+    .services nav{height:15%;background-color:purple}
+    .services h2{text-align: center;}
+    .services hr{width:60%;margin-left:20%}
+    .services section{background-color:rgb(255, 165, 0, 0.5);display: grid;
+        height:85%;grid-template-rows: 2cm;width: 90%;margin-left:5%;
+        grid-template-columns: repeat(3, 1fr);text-align: center;}
+    .services section .work{position: relative;margin:auto; top:20%; width: 94%; 
+        height: auto; background-color:rgb(138, 43, 226,0.5)}
+    .services section .work img{z-index: 1;width:220px; height: 150px;margin-top: 5%;margin-bottom:5%}
+    .services section .work_text{width: 95%;height: 60%;opacity: 0.9;position: absolute; 
+        margin: auto;top: 65%;left:2.5%;background:rgba(194, 194, 4, 0.8);z-index: 2}
+    .services section .work a{color:navy; font-weight: bold;}
+    @media screen and (max-width: 1000px) {
+        .services{height:550px;}
+        .services nav{height:8%;background-color:purple}
+        .services section{height:92%;}
+        .services section{grid-template-columns: repeat(2, 1fr)}
+        .services section .work.right{margin-left: 60%;margin-top: 100px;}
+    }@media screen and (max-width: 800px) {
+        .services{height:900px;}
+        .services nav{height:6%;background-color:purple}
+        .services section{height:94%;}
+        .services section{grid-template-columns: repeat(1, 1fr) }
+        .services section .work.middle{margin-top: 120px}
+        .services section .work.right{margin-left: 3%;margin-top: -40px;}
+    }@media screen and (max-width: 600px) {
+        .services{height:850px;background-color:black}
+        .services nav{height:45px;background-color:purple}
+        .services section{height:40px;grid-template-columns: repeat(1, 1fr);background-color:white}
+        .services section .work.middle{margin-top: 100px} 
+        .services section .work.right{margin-top: -85px;background-color:purple}
+        .services section{height:100%; top:0%}
+    }
+</style>
+<div class="services">
+    <nav>
+        <h2>SERVICES</h2><hr>
+    </nav>
+    <section>       
+        <div class="work left" >
+            <img src="{% static 'images/homepage/fullstack.jpg' %}">
+            <div class="work_text"> 
+                <p>Full stack <br> <br>
+            </div>
+        </div>
+        <div class="work middle">
+            <img src="{% static 'images/homepage/backend.webp' %}">
+            <div class="work_text"> 
+                <p>Front end<br><br>
+            </div>
+        </div>
+        <div class="work right">
+            <img src="{% static 'images/homepage/frontend.jpg' %}">
+            <div class="work_text" > 
+                <p>Backend</p>
+            </div>
+        </div> 
+    </section>
+</div>
+
+

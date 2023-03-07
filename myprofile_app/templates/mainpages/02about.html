@@ -1,0 +1,20 @@
+<!--THE MAIN HOMEPAGE-->
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div >
+        <div id='about' style="height:auto">
+            {%include 'about/01about.html'%}
+        </div>
+        <div>
+            {% include 'about/06skills.html' %}
+        </div>
+        <div>
+            {% include 'about/07education.html' %}
+        </div>
+        <div id='experiences'>
+            {% include 'about/03experiences.html' %}
+        </div>
+    </div>
+
+{% endblock content %}

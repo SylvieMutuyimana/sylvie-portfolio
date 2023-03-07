@@ -1,0 +1,10 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 13px;width:100%;
+    margin:0;background-color:rgb(6, 0, 37);background-attachment: fixed;
+}
+header {
+    overflow: hidden;background-color: #050515; height:70px;
+    position: fixed;top: 0;width: 100%;z-index: 99
+}
+#the_body{width: 100%;margin-top: 60px;position: static}

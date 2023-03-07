@@ -1,0 +1,10 @@
+.page{background:url("static/images/extracurricular/abstract_background.jpg"); background-position: top;
+background-repeat: no-repeat; background-size: 100% auto;background-attachment: fixed; }
+.page .contact_page{width: 90%; margin-left: 5%;}
+.page .contact_page input[type=text],.page .contact_page select, .page .contact_page textarea{
+width:100%;padding:12px;border:1px solid#ccc;border-radius: 4px;
+box-sizing: border-box;margin-top: 6px;margin-bottom: 16px;resize: vertical;}
+.page .contact_page input[type=submit] {background-color: #04AA6D;color: white;
+padding:12px 20px;border:none;border-radius:4px;cursor:pointer;}
+.page .contact_page input[type=submit]:hover {background-color: #45a049;}
+.page .contact_page .container {border-radius: 5px;background-color:#f2f2f2;padding: 20px;}

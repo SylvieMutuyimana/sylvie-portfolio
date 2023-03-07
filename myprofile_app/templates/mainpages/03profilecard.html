@@ -1,0 +1,59 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/mainpages/05profilecard.css' %}">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<body>
+    <div class="profile-card">
+        <div class="backdrop"></div>
+        <div class="profile-card-top">
+            <i class="fa-solid fa-arrow-left-long" onclick="goBack()"></i>
+            <div>
+                <i class="fa-regular fa-heart heart"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </div>
+        <div class="profile-card-middle">
+            <div class="profile-pic"><i class="fa-solid fa-circle-check"></i></div>
+            <h1>Sylvie Mutuyimana</h1>
+            <h2>Software Engineer</h2>
+            <p>Full stack software engineer passionate about sustainability project</p>
+            <div class="social-data">
+                <div><h5>Projects</h5><span>8</span></div>
+                <div><h5>Following</h5><span>149</span></div>
+                <div><h5>Followers</h5><span>5.2k</span></div>
+            </div>
+            <div class="skills">
+                <h3>My Skills</h3>
+                <ul class="skills-list">
+                    <li><a href="">UX Design</a></li>
+                    <li><a href="">UI Design</a></li>
+                    <li><a href="">Python</a></li>
+                    <li><a href="">Django</a></li>
+                    <li><a href="">Flutter</a></li>
+                    <li><a href="">Javascript</a></li>
+                    <li><a href="">Node Js</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">C#</a></li>
+                    <li><a href="">Photoshop</a></li>
+                    <li><a href="">Illustrator</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-behance"></i></div>
+                <div><i class="fa-brands fa-github"></i></div>
+            </div>
+        </div>
+        <div class="profile-card-bottom">\
+            <a href="" class="follow">Follow</a>
+            <a href="" class="hire-me">Hire Me</a>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {window.history.back(); }
+        </script>
+</body>

@@ -1,0 +1,21 @@
+<!--THE MAIN HOMEPAGE-->
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mainpages/01home.css' %}">
+    <div id="homepage" style="background-color:orange">
+
+        <div id = "home" >
+            {%include 'home/00hometop.html'%}
+        </div>
+        <div id='services'>
+            {% include 'home/02services.html' %}
+        </div>
+        <div id='projects'>
+            {% include 'home/05projects.html' %}
+        </div>
+        <div id='contact'>
+            {% include 'home/08contact.html' %}
+        </div>
+    </div>
+{% endblock content %}

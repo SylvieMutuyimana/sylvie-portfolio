@@ -1,0 +1,85 @@
+<!--THE MAIN HOMEPAGE-->
+
+{% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/mainpages/sidenav/03experiences.css' %}" >
+    <style>
+        .experiences_page{
+            text-align:center;
+            background:url("static/images/extracurricular/abstract_background.jpg"); background-position: top;
+            background-repeat: no-repeat; background-size: 100% auto;background-attachment: fixed; 
+        }
+        </style>
+    <div class="experiences_page">
+        <div class="the_experiences">
+            <br> <h2>EXPERIENCES</h2><hr><br>
+            <div class="all_experiences">
+                <h2>Work</h2>
+                <div class="each_experience">
+                    <button type="button" class="collapsible"> PHP Web Developer | NSO <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <h5>Jan 2023 - Current</h5>
+                        <p>Creating and maintaining the website. Responsible for the site's technical 
+                            aspects, such as its performance and capacity.
+                        </p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible"> API Developer Intern | RBIS<i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <h5>May 2022 - Sept 2022</h5>
+                        <p>Assisting RBIS projects and developing their website and app.
+                        </p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">AR/VR  Hackathon <i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <h5>Dec 2022</h5>
+                        <p>Worked on developing a full VR chemistry lab for students to learn while practicing</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="all_experiences">
+                <h2>Workshops / Training</h2> 
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Software Engineering | AmaliTech<i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <h5>Jan 2023 - Current</h5>
+                        <p>Working as a full-stack developer trainee and advancing my skills in full-stack applications
+                            <br> <i> Languages & Frameworks: PHP, NodeJs  </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Data Science | CodeCamp<i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <h5>June 2022 - Current</h5>
+                        <p>Combining principles and practices from the fields of statistics and artificial intelligence 
+                            to analyze large amounts of data.
+                            <br> <i> Languages: Python </i>
+                        </p>
+                    </div>
+                </div>
+                <div class="each_experience">
+                    <button type="button" class="collapsible">Technology Entrepreneurship<i class="fa fa-angle-down"></i> </button>
+                    <div class="content">
+                        <h5>Feb 2021 - March 2021</h5>
+                        <p>Mastering business presentation, investor pitching, fund,ing and launching of new technology ventures.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {content.style.display = "none";} 
+                else {content.style.display = "block";}});}
+    </script>

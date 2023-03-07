@@ -1,0 +1,48 @@
+<!--THE MAIN HOMEPAGE-->
+
+
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home/00hometop.css' %}">
+    <style>
+        .hometop{
+            background-image: url('static/images/me/in.png');
+            background-position: 10px 0;
+            background-repeat: no-repeat;  ;
+            background-size: 60% auto;background-attachment: fixed;
+        }
+        @media screen and (max-width: 870px) {
+            .hometop{background-size: 105% auto;  background-position: 20px 0px ;}
+            .hometop_layout .right{right:2.5%; width:60.5%;margin-top:40%:height:30%;background-color:brown}
+            .hometop_layout .left{left:2.5%;width:21.5%;}
+        }
+        @media screen and (max-width: 640px) {
+            .hometop{background-size: 105% auto;  background-position: -70px 30px ;}
+            .hometop_layout .right{right:2.5%; width:60.5%;margin-top:0%:height:50%;background-color:yellow}
+            .hometop_layout .left{left:2.5%;width:21.5%;}
+        }
+        @media screen and (max-width: 500px) {
+            .hometop{background-size: 120% auto; background-position: -40px 0; }
+        }
+        
+    </style>
+    <div class="hometop" >
+        <div class="hometop_layout" >
+            <div class="left">
+                <!--<div class="heading"><br><strong>Designer</strong><p>******</p></div>
+                <div >
+                    Web and App Designer<br>Languages: JavaScript, React, CSS<br>
+                    <p><i>Figma: <a href="#Figma">Sylvie Mutuyimana</a></i></p>
+                </div>
+            -->
+            </div>
+            <div class="right" style="color:azure">
+                <div class="heading"><br><strong>Sylvie Mutuyimana</strong><p>******</p></div>
+                <div>
+                    Hello, I am a UX/UI Designer and <br>
+                    Full stack Developer Based in Kigali, Rwanda.
+                </div>
+            </div>
+        </div>
+    </div>

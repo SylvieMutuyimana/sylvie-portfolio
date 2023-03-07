@@ -1,0 +1,23 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/header_footer/header.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav>
+    
+    <span class="right">
+        <a href="{% url 'home' %}" class="active">HOME</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <a href="{% url 'home' %}#services">SERVICES</a>
+        <a href="{% url 'home' %}#projects">PROJECTS</a>
+        <a href="{% url 'home' %}#contact"> CONTACT </a>
+    </span>
+    <a href="javascript:void(0);" class="icon" onclick="topnav()">
+        <i class="fa fa-bars"></i>
+    </a>
+</nav>
+<script>
+    function topnav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {x.className += " responsive";
+        } else {x.className = "topnav";}}
+</script>
